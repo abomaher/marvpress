@@ -956,3 +956,9 @@ function custom_rewrite_rule() {
     add_rewrite_rule('^nutrition/([^/]*)/([^/]*)/?','index.php?page_id=12&food=$matches[1]&variety=$matches[2]','top');
 }
 add_action('init', 'custom_rewrite_rule', 10, 0);
+
+
+//Add new function
+    function new_fun($name){
+        echo $name;
+    }
